@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         //some issue fixing
         //test branch testing
+        //temp issue fixing
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
