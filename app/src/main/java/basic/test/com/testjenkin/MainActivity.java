@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                     mTextMessage.setText(R.string.title_notifications);
 
                     Toast.makeText(getApplicationContext(),"Test",Toast.LENGTH_SHORT).show();
-                    //change on dev branch
+
                     return true;
             }
             return false;
