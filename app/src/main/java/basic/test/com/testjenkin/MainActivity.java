@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                     mTextMessage.setText(R.string.title_notifications);
 
                     Toast.makeText(getApplicationContext(),"Test",Toast.LENGTH_SHORT).show();
-                    //change on dev branch
+
                     return true;
             }
             return false;
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         //Test
-        //add new feature
+        //NEW FEATURE-TEXT
 
     }
 
