@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Test2",Toast.LENGTH_SHORT).show();
                     return true;
                 case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+                    //mTextMessage.setText(R.string.title_notifications);
 
                     Toast.makeText(getApplicationContext(),"Test",Toast.LENGTH_SHORT).show();
 
