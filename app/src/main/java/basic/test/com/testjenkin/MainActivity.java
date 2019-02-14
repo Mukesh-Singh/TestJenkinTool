@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.title_dashboard);
-                    Toast.makeText(getApplicationContext(),"Test2",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),"Test2",Toast.LENGTH_SHORT).show();
                     return true;
                 case R.id.navigation_notifications:
                     //mTextMessage.setText(R.string.title_notifications);
