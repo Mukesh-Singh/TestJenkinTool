@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         //Test
         //NEW FEATURE-TEXT
+        //change testing
 
     }
 
