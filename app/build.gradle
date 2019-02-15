@@ -21,11 +21,11 @@ android {
         applicationId "basic.test.com.testjenkin"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 2
+        versionCode 1
         versionName "1.1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         setProperty("archivesBaseName", APP_NAME + "_bn_" + versionCode + "_v_" + versionName )
-        project.createJenkisFileForBuild("TestJenkins Android","Production",versionCode,versionName)
+        project.createJenkisFileForBuild("TestJenkins Android","Staging",versionCode,versionName)
     }
     signingConfigs {
         signingConfigs {
