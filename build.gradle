@@ -25,3 +25,16 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext.createJenkisFileForBuild = {  String projectName, String buildType, Integer versionCode, String versionName ->
+//write some key value in jenkis.properties file. This file is required for the jenkins
+//build process's Editable notification mail.
+    def jenkinsPropertiesFile=rootProject.file("jenkins_file.properties")
+    def jenkinsProperties=new Properties()
+    jenkinsProperties.setProperty("APP_BUILD_PROJECT_NAME",projectName)
+    jenkinsProperties.setProperty("APP_BUILD_TYPE",buildType)
+    jenkinsProperties.setProperty("APP_BUILD_NUMBER",String.valueOf(versionCode))
+    jenkinsProperties.setProperty("APP_BUILD_VERSION",versionName)
+    jenkinsProperties.store(new FileOutputStream(jenkinsPropertiesFile),"This properties file will be used for jenkins CI tools")
+}
+
